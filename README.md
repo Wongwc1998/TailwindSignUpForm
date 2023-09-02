@@ -1,0 +1,1 @@
+A replication of Odin Project's Sign-up Form(https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form), made with Vite and Tailwind CSS:
