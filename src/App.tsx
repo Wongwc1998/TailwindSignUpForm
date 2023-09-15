@@ -44,7 +44,7 @@ function App() {
       <div className="grid grid-cols-3  min-h-screen">
         <div className="bg-black text-center grid grid-row-5 text-slate-200 items-end bg-unsplash bg-center bg-cover bg-no-repeat">
           <div className="row-span-2 text-7xl flex items-center justify-center bg-black bg-opacity-50 p-5">
-            <img src="public/odin-lined.png" className="h-20" />
+            <img src="./public/odin-lined.png" className="h-20" />
             <p className="text-7xl">ODIN</p>
           </div>
           <div className=" row-span-3">
