@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'unsplash': 'url(unsplash.jpg)'
+        'unsplash': 'url(assets/images/unsplash.jpg)'
       }},
       fontFamily: {
         'norse': ['Norse-Bold']
