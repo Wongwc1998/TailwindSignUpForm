@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 const phoneRegex = new RegExp(
-  /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
+  /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/,
 );
 type FormData = {
   firstName: string;
@@ -20,7 +20,7 @@ function App() {
       firstName: z.string().min(2).max(30),
       lastName: z.string().min(2).max(30),
       email: z.string().email(),
-      phoneNumber: z.string().regex(phoneRegex, 'Invalid Number!'),
+      phoneNumber: z.string().regex(phoneRegex, "Invalid Number!"),
       password: z.string().min(5).max(20),
       confirmPassword: z.string().min(5).max(20),
     })
@@ -44,7 +44,11 @@ function App() {
       <div className="grid grid-cols-3  min-h-screen">
         <div className="bg-black text-center grid grid-row-5 text-slate-200 items-end bg-unsplash bg-center bg-cover bg-no-repeat">
           <div className="row-span-2 text-7xl flex items-center justify-center bg-black bg-opacity-50 p-5">
-            <img src="assets/images/odin-lined.png" className="h-20" alt="Odin Logo" />
+            <img
+              src="assets/images/odin-lined.png"
+              className="h-20"
+              alt="Odin Logo"
+            />
             <p className="text-7xl">ODIN</p>
           </div>
           <div className=" row-span-3">
